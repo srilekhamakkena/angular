@@ -1,0 +1,52 @@
+<script>
+    let string = str => str.split('').reverse().join('');
+        console.log(string('sri'));
+///tables
+    function a (number, length){
+        for(let i=0; i<=10; i++){
+            console.log(`${number} X ${i} = ${number*i}`);
+        }
+    }
+    a(5,10);
+ //map function
+ //square
+ let n= [1,2,3,4]
+ let square = n.map(n => n*n)
+ console.log(square);
+
+ let n1 = function(n){
+    console.log(n*n);
+ };
+ n1(5)
+
+ // uppercase
+ let str = ['sri','lekha']
+ let result = str.map(str => str.toUpperCase());
+ console.log(result);
+
+ // for a given array and given prompt multiplacation
+ let array = [1,2,3,4]
+ let a1 = Number(prompt("enter number"));
+ let res = array.map(array => array * a1);
+ console.log(res);
+
+ // filter elements greater than given input
+ let arr = [2,4,5,7,8,9]
+  let a2 = Number(prompt("enter number"));
+  let resu = arr.filter(function(g){
+    return g > a2;
+  })
+ console.log(resu);
+ 
+ //Count Elements Greater Than User Input
+ let array1 = [1, 7, 3, 9, 4];
+ let num = Number(prompt("Enter number to compare"));
+ let count = array1.filter(item => item > num).length;
+ console.log("Count is: " + count);
+
+
+
+
+
+
+        </script>
